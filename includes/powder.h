@@ -255,6 +255,7 @@ struct part_state
     int burn;
     float btemp;
 };
+
 typedef struct part_state part_state;
 
 /* BEGIN FUNCTION POINTERS */
