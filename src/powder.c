@@ -2578,6 +2578,7 @@ int update_SEMCUN(register i)
 }
 int update_STKM(register i)
 {
+	INIT_FP_VARS();
 	float dt = 0.9;///(FPSB*FPSB);  //Delta time in square
 	//Tempirature handling
 	if(parts[i].temp<243)
@@ -2597,7 +2598,7 @@ int update_STKM(register i)
 			create_part(-1, x+2, y+r, player[2]);
 		}
 		kill_part(i);  //Kill him
-		goto killed;
+		return 1;
 	}
 
 	parts[i].vy += -0.7*dt;  //Head up!
