@@ -1563,7 +1563,7 @@ void draw_parts(pixel *vid)
 		}
 		else if(t==PT_WIFI)
 		{
-			float frequency = 0.25;
+			float frequency = 0.0628;
 			int q = parts[i].tmp;
 			cr = sin(frequency*q + 0) * 127 + 128;
 			cg = sin(frequency*q + 2) * 127 + 128;
