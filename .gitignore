@@ -5,3 +5,5 @@ powder-debug
 gmon.out
 *.*.orig
 build/*
+build
+stamps/*
