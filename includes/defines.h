@@ -9,7 +9,7 @@
 
 #define SAVE_VERSION 44
 #define MINOR_VERSION 6
-#define IDENT_VERSION "G" //Change this if you're not Simon! It should be a single letter.
+#define IDENT_VERSION "H" //Change this if you're not Simon! It should be a single letter.
 //#define BETA
 
 #define SERVER "powdertoy.co.uk"
@@ -22,8 +22,8 @@
 #define TIMEOUT 100
 #define HTTP_TIMEOUT 10
 
-#define MENUSIZE 40
-#define BARSIZE 17
+#define MENUSIZE 30
+#define BARSIZE 12
 #define XRES	612
 #define YRES	384
 #define NPART XRES*YRES
@@ -36,7 +36,7 @@
 extern unsigned char ZFACTOR;
 extern unsigned char ZSIZE;
 
-#define CELL    4
+#define CELL    8
 #define ISTP    (CELL/2)
 #define CFDS	(4.0f/CELL)
 
@@ -73,7 +73,7 @@ typedef unsigned int pixel;
 #define NORMAL_INTERP  20
 #define NORMAL_FRAC    16
 
-#define REFRACT        0x80000000
+#define REFRACT        0x10000000
 
 /* heavy flint glass, for awesome refraction/dispersion
    this way you can make roof prisms easily */
